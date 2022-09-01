@@ -35,3 +35,4 @@ If you playing on Steam Deck check [this page](https://github.com/Albeoris/Memor
 
 ## Screenshots:
 <img width="960" alt="Skills" src="https://user-images.githubusercontent.com/4787832/188006312-f43745f5-2886-492d-9461-2d17927fe47f.png">
+<img width="960" alt="Font Size" src="https://user-images.githubusercontent.com/4787832/188019195-df48fba1-86b5-4a97-ae3e-e7a1c8bf1249.jpg">
