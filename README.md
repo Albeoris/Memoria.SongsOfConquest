@@ -31,3 +31,6 @@ If you playing on Steam Deck check [this page](https://github.com/Albeoris/Memor
 
 - Share mod logs: $GameFolder$\BepInEx\LogOutput.log
 - Create an issue.
+
+## Screenshots:
+<img width="960" alt="Skills" src="https://user-images.githubusercontent.com/4787832/188006312-f43745f5-2886-492d-9461-2d17927fe47f.png">
