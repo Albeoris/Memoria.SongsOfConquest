@@ -6,7 +6,7 @@ This is a small modification that makes gameplay of [Songs Of Conquest](https://
 
 ## Installation:
 - Unpack [BepInEx_UnityMono_x64_6.0.0-pre.1](https://github.com/Albeoris/Memoria.SongsOfConquest/releases/download/v2022.09.01/BepInEx_UnityMono_x64_6.0.0-pre.1.zip) into the game folder.
-- Unpack the [mod](https://github.com/Albeoris/Memoria.SongsOfConquest/releases/download/v2022.09.01/Steam_v2022.09.01.zip) archive into the game folder.
+- Unpack the [mod](https://github.com/Albeoris/Memoria.SongsOfConquest/releases/download/v2022.09.01/Memoria.SongsOfConquest.Steam_v2022.09.01.zip) archive into the game folder.
 
 If you are already using BepInEx to load other mods, use the most recent version of the loader.
 

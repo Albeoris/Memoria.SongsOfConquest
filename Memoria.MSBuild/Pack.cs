@@ -41,7 +41,7 @@ public sealed class Pack : ITask
 
     private ZipArchive CreateZipArchive()
     {
-        String zipName = $"{Configuration}_v{DateTime.Now:yyyy.MM.dd}.zip";
+        String zipName = $"Memoria.SongsOfConquest.{Configuration}_v{DateTime.Now:yyyy.MM.dd}.zip";
         String zipPath = Path.Combine(PublishDirectory, zipName);
 
         ZipArchive zip = ZipFile.Open(zipPath, ZipArchiveMode.Create, Encoding.UTF8);
