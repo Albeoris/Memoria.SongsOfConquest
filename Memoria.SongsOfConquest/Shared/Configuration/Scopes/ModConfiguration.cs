@@ -6,6 +6,7 @@ namespace Memoria.SongsOfConquest.Configuration;
 public sealed partial class ModConfiguration
 {
     public SpeedConfiguration Speed { get; }
+    public FontConfiguration Font { get; }
     public CommandersLevelUpConfiguration CommandersLevelUp { get; }
 
     public ModConfiguration()
@@ -18,6 +19,7 @@ public sealed partial class ModConfiguration
 
                 ConfigFileProvider provider = new();
                 Speed = SpeedConfiguration.Create(provider);
+                Font = FontConfiguration.Create(provider);
                 CommandersLevelUp = CommandersLevelUpConfiguration.Create(provider);
 
                 log.LogInfo($"{nameof(ModConfiguration)} initialized successfully.");

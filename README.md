@@ -6,7 +6,7 @@ This is a small modification that makes gameplay of [Songs Of Conquest](https://
 
 ## Installation:
 - Unpack [BepInEx_UnityMono_x64_6.0.0-pre.1](https://github.com/Albeoris/Memoria.SongsOfConquest/releases/download/v2022.09.01/BepInEx_UnityMono_x64_6.0.0-pre.1.zip) into the game folder.
-- Unpack the [mod](https://github.com/Albeoris/Memoria.SongsOfConquest/releases/download/v2022.09.01/Memoria.SongsOfConquest.Steam_v2022.09.01.zip) archive into the game folder.
+- Unpack the [mod](https://github.com/Albeoris/Memoria.SongsOfConquest/releases/download/v2022.09.02/Memoria.SongsOfConquest.Steam_v2022.09.02.zip) archive into the game folder.
 
 If you are already using BepInEx to load other mods, use the most recent version of the loader.
 
@@ -20,6 +20,7 @@ If you playing on Steam Deck check [this page](https://github.com/Albeoris/Memor
 
 - You can increase game speed (Default Key: F1).
 - You can [increase the number of skills available when leveling up](https://github.com/Albeoris/Memoria.SongsOfConquest/wiki/Features-Commanders.LevelUp.cfg) (Disabled by default)
+- You can [increase font size](https://github.com/Albeoris/Memoria.SongsOfConquest/wiki/Features-Font.cfg) (Temporary solution)
 
 ## Configuration:
 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using HarmonyLib;
+using Memoria.SongsOfConquest.BeepInEx;
 using Memoria.SongsOfConquest.Configuration;
 using SongsOfConquest;
 using SongsOfConquest.Common;
@@ -20,18 +21,27 @@ public static class SkillLookup_GetChoosableSkills
         IWielderLookup ____wielderLookup, ISkillPoolManifest ____skillPoolManifest, IGameConfig ____config
     )
     {
-        CommandersLevelUpConfiguration config = ModComponent.Instance.Config.CommandersLevelUp;
-        if (!config.EnableOverrideSelectableSkillsCount)
+        try
         {
+            CommandersLevelUpConfiguration config = ModComponent.Instance.Config.CommandersLevelUp;
+            if (!config.EnableOverrideSelectableSkillsCount)
+            {
+                // Call native method
+                return true;
+            }
+
+            var wrapper = new Wrapper(__instance, ____wielderLookup, ____skillPoolManifest, ____config, commander);
+            __result = wrapper.GetChoosableSkills(instanceRandomSeed,  ignoreSkillInterval);
+
+            // Skip native method
+            return false;
+        }
+        catch (Exception ex)
+        {
+            ModComponent.Log.LogException(ex);
             // Call native method
             return true;
         }
-
-        var wrapper = new Wrapper(__instance, ____wielderLookup, ____skillPoolManifest, ____config, commander);
-        __result = wrapper.GetChoosableSkills(instanceRandomSeed,  ignoreSkillInterval);
-
-        // Skip native method
-        return false;
     }
 	
     private sealed class Wrapper
